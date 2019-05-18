@@ -121,7 +121,7 @@ HBFLUnet.compile(optimizer=keras.optimizers.Adam(lr=lr),loss = relative_err)
 
 HBFLUnet.fit([X_trainr,X_traini], [Y_trainr,Y_traini], batch_size = BATCH_SIZE, epochs = EPOCHS, validation_data = ([X_testr,X_testi],[Y_testr,Y_testi]))
 
-net_para = {'BATCH_SIZE':BATCH_SIZE,'EPOCHS':EPOCHS,'optimizer':'Adam','lr':lr,'loss':'mse','n_train':n_train}
+net_para = {'BATCH_SIZE':BATCH_SIZE,'EPOCHS':EPOCHS,'optimizer':'Adam','lr':lr,'loss':'relative_err','n_train':n_train}
 sio.savemat('net_para.mat',net_para)
 
 Dr = D_rl.get_weights()

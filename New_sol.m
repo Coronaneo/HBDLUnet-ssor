@@ -1,4 +1,4 @@
-
+setup
 load LUnew.mat
 load info.mat
 setting = info.setting;ZL = info.ZL;ZU = info.ZU;Afac = info.Afac;b = info.b;xt = info.xt;

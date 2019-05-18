@@ -101,8 +101,8 @@ if M>lsz
     end
     switch method
         case 1
-            Factor.A12 = BF_IDBF(Afun,x(1:end/2),k((end/2+1):end),8,rk,tol);
-            Factor.A21 = BF_IDBF(Afun,x((end/2+1):end),k(1:end/2),8,rk,tol);
+            Factor.A12 = BF_IDBF(Afun,x(1:end/2),k((end/2+1):end),8,rk,tol,'rand',5,0);
+            Factor.A21 = BF_IDBF(Afun,x((end/2+1):end),k(1:end/2),8,rk,tol,'rand',5,0);
         case 2
             Factor.A12 = CURBF(Afun,x(1:end/2),k((end/2+1):end),rk,tol,0);
             Factor.A21 = CURBF(Afun,x((end/2+1):end),k(1:end/2),rk,tol,0);

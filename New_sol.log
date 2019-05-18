@@ -1,0 +1,88 @@
+MATLAB is selecting SOFTWARE OPENGL rendering.
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2019 The MathWorks, Inc.
+              R2019a Update 1 (9.6.0.1099231) 64-bit (glnxa64)
+                               April 12, 2019
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+>> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> 
+errlu_old =
+
+    1.0162
+
+>> >> >> 
+errlu_new =
+
+   10.6268
+
+>> >> >> >> >> 
+iterNonPre =
+
+   509
+
+>> 
+errResNon =
+
+   9.9696e-07
+
+>> 
+errIterNon =
+
+   1.0640e-04
+
+>> >> >> >> >> >> 
+timeLUBFapply_old =
+
+    0.0173
+
+>> 
+errDir_old =
+
+    2.0883
+
+>> >> >> 
+iterPre_old =
+
+    30
+
+>> >> 
+errRes_old =
+
+   4.2548e-07
+
+>> 
+errIter_old =
+
+   1.4006e-05
+
+>> >> >> >> >> >> 
+timeLUBFapply_new =
+
+    0.0061
+
+>> 
+errDir_new =
+
+    0.1914
+
+>> >> >> 
+iterPre_new =
+
+    24
+
+>> >> 
+errRes_new =
+
+   3.5445e-07
+
+>> 
+errIter_new =
+
+   2.5152e-05
+
+>> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> results have been saved!
+>> 

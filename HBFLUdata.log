@@ -1,0 +1,80 @@
+MATLAB is selecting SOFTWARE OPENGL rendering.
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2019 The MathWorks, Inc.
+              R2019a Update 1 (9.6.0.1099231) 64-bit (glnxa64)
+                               April 12, 2019
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+>> >> >> 
+num =
+
+     8
+
+>> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> 
+ans =
+
+   257     8     5
+
+[Warning: MATLAB has disabled some advanced graphics rendering features by
+switching to software OpenGL. For more information, click <a
+href="matlab:opengl('problems')">here</a>.] 
+
+timeLUBF =
+
+    0.5904
+
+
+timeHSSBFapply =
+
+    0.0216
+
+
+iterNonPre =
+
+   509
+
+
+errResNon =
+
+   9.9696e-07
+
+
+errIterNon =
+
+   1.0640e-04
+
+
+timeLUBFapply =
+
+    0.0147
+
+
+errDir =
+
+    0.8293
+
+
+iterPre =
+
+    43
+
+
+errIter =
+
+   3.2247e-06
+
+
+errRes =
+
+   9.0112e-07
+
+>> >> >> >> >> >> >> >> >> >> 
+errlu =
+
+    1.0162
+
+>> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> 

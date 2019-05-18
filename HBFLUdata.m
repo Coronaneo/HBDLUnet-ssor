@@ -1,7 +1,7 @@
 setup
 close all
 num = 8
-vd = 7;
+vd = 8;
 M = 10000;
 iterPre = zeros(size(vd));
 iterNonPre = zeros(size(vd));
