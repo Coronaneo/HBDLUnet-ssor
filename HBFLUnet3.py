@@ -13,11 +13,21 @@ import keras
 import json
 import scipy.io as sio
 from keras import backend as K
+from keras.constraints import Constraint
 import h5py
 from keras.utils import plot_model
 import mat4py
 import numpy.matlib
 from HBFLU_auxiliaryfunc import *
+
+class DiagonalWeight(Constraint):
+    '''Contrains the weights to be diagonal
+    '''
+    def __call__(self,w):
+        N = K.int_shape(w)[-1]
+        m = K.eye(N)
+        w *= m
+        return w
 
 ## ========================================================== set parameters ==================================================================== ##
 BATCH_SIZE = 200
@@ -88,8 +98,8 @@ inputi = Input(batch_shape = (BATCH_SIZE,N), name = 'inputi',dtype = 'float64')
 
 (Linv_rl,Linv_im,xrl,xim) = Linvnet(Lrl,Lim,inputr,inputi,BATCH_SIZE,N)
 
-D_rl = Dense(N,use_bias = False, kernel_initializer = keras.initializers.Constant(Drl), trainable = False)
-D_im = Dense(N,use_bias = False, kernel_initializer = keras.initializers.Constant(Dim), trainable = False)
+D_rl = Dense(N,use_bias = False, kernel_initializer = keras.initializers.Constant(Drl), kernel_constraint = DiagonalWeight(),trainable = True)
+D_im = Dense(N,use_bias = False, kernel_initializer = keras.initializers.Constant(Dim), kernel_constraint = DiagonalWeight(),trainable = True)
 xrl1 = D_rl(xrl)
 xrl2 = D_im(xim)
 xim1 = D_rl(xim)
@@ -137,8 +147,8 @@ LU['Urnew'] = extract_U(Uinv_rl)
 print('Urnew constructed!')
 LU['Uinew'] = extract_U(Uinv_im)
 print('Uinew constructed!')
-LU['Drnew'] = Drl
-LU['Dinew'] = Dim
+LU['Drnew'] = Dr
+LU['Dinew'] = Di
 print('Dnew constructed!')
 
 #print(LU['Lrnew']['A21']['U'][0][0])
