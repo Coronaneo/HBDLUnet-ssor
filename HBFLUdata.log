@@ -12,12 +12,12 @@ For product information, visit www.mathworks.com.
 >> >> >> 
 num =
 
-     8
+     9
 
 >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> 
 ans =
 
-   257     8     5
+        1025           9           5
 
 [Warning: MATLAB has disabled some advanced graphics rendering features by
 switching to software OpenGL. For more information, click <a
@@ -25,56 +25,56 @@ href="matlab:opengl('problems')">here</a>.]
 
 timeLUBF =
 
-    0.5904
+    1.7359
 
 
 timeHSSBFapply =
 
-    0.0216
+    0.0288
 
 
 iterNonPre =
 
-   509
+        5000
 
 
 errResNon =
 
-   9.9696e-07
+   4.2648e-05
 
 
 errIterNon =
 
-   1.0640e-04
+    0.0038
 
 
 timeLUBFapply =
 
-    0.0147
+    0.0282
 
 
 errDir =
 
-    0.8293
+    0.8569
 
 
 iterPre =
 
-    43
+   211
 
 
 errIter =
 
-   3.2247e-06
+   1.3879e-05
 
 
 errRes =
 
-   9.0112e-07
+   9.4622e-07
 
 >> >> >> >> >> >> >> >> >> >> 
 errlu =
 
-    1.0162
+    1.6407
 
 >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> 

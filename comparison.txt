@@ -145,3 +145,107 @@ old :  9.59E-01   1.42E+00   19         2.53E-07   9.58E-07
 new :  4.34E-01   1.13E-01   10         5.46E-07   1.29E-06
 
  
+Comparison: num = 8 , N = 256   , rk = 5  , tol = 1.0E-08, tolsol = 1.0E-06, w = 1.00, status = 0
+ ===========================================================================================================
+without a preconditioner:
+         iterNonPre = 509     , errResNon = 9.97E-07, errIterNon = 1.06E-04
+============================================================================================================
+with a SSOR preconditioner:
+HBFLUnet_parameters: optimizer =   Adam(lr=0.01000),BATCH_SIZE = 200  ,EPOCHS = 10  ,loss = relative_err, n_train = 5000 
+------------------------------------------------------------------------------------------------------------
+       errlu      errDir     iterPre    errRes     errIter
+old :  1.02E+00   2.09E+00   30         4.25E-07   1.40E-05
+new :  3.57E-01   1.70E-01   22         1.40E-07   9.63E-07
+
+ 
+Comparison: num = 9 , N = 128   , rk = 5  , tol = 1.0E-08, tolsol = 1.0E-06, w = 1.00, status = 0
+ ===========================================================================================================
+without a preconditioner:
+         iterNonPre = 47      , errResNon = 8.16E-07, errIterNon = 4.92E-06
+============================================================================================================
+with a SSOR preconditioner:
+HBFLUnet_parameters: optimizer =   Adam(lr=0.01000),BATCH_SIZE = 200  ,EPOCHS = 10  ,loss = relative_err, n_train = 5000 
+------------------------------------------------------------------------------------------------------------
+       errlu      errDir     iterPre    errRes     errIter
+old :  1.04E+00   2.36E+00   19         3.40E-07   2.82E-06
+new :  9.80E-02   8.52E-02   10         5.64E-07   7.21E-07
+
+ 
+Comparison: num = 9 , N = 1024  , rk = 5  , tol = 1.0E-08, tolsol = 1.0E-06, w = 1.00, status = 0
+ ===========================================================================================================
+without a preconditioner:
+         iterNonPre = 5000    , errResNon = 4.26E-05, errIterNon = 3.78E-03
+============================================================================================================
+with a SSOR preconditioner:
+HBFLUnet_parameters: optimizer =   Adam(lr=0.01000),BATCH_SIZE = 200  ,EPOCHS = 10  ,loss = relative_err, n_train = 5000 
+------------------------------------------------------------------------------------------------------------
+       errlu      errDir     iterPre    errRes     errIter
+old :  1.64E+00   1.83E+00   408        9.60E-07   2.11E-05
+new :  2.01E+01   2.61E-01   5000       7.00E-05   1.32E-01
+
+ 
+Comparison: num = 8 , N = 512   , rk = 5  , tol = 1.0E-08, tolsol = 1.0E-06, w = 1.00, status = 0
+ ===========================================================================================================
+without a preconditioner:
+         iterNonPre = 2919    , errResNon = 9.99E-07, errIterNon = 9.38E-05
+============================================================================================================
+with a SSOR preconditioner:
+HBFLUnet_parameters: optimizer =   Adam(lr=0.01000),BATCH_SIZE = 200  ,EPOCHS = 10  ,loss = relative_err, n_train = 5000 
+------------------------------------------------------------------------------------------------------------
+       errlu      errDir     iterPre    errRes     errIter
+old :  1.57E+00   2.98E+00   47         4.50E-07   1.82E-05
+new :  1.02E+00   2.30E-01   96         9.45E-07   4.52E-05
+
+ 
+Comparison: num = 9 , N = 256   , rk = 5  , tol = 1.0E-08, tolsol = 1.0E-06, w = 1.00, status = 0
+ ===========================================================================================================
+without a preconditioner:
+         iterNonPre = 383     , errResNon = 9.95E-07, errIterNon = 9.95E-05
+============================================================================================================
+with a SSOR preconditioner:
+HBFLUnet_parameters: optimizer =   Adam(lr=0.01000),BATCH_SIZE = 200  ,EPOCHS = 10  ,loss = relative_err, n_train = 5000 
+------------------------------------------------------------------------------------------------------------
+       errlu      errDir     iterPre    errRes     errIter
+old :  7.39E-01   1.44E+00   27         5.44E-07   2.06E-05
+new :  2.87E-01   1.06E-01   17         2.01E-07   2.66E-06
+
+ 
+Comparison: num = 9 , N = 512   , rk = 5  , tol = 1.0E-08, tolsol = 1.0E-06, w = 1.00, status = 0
+ ===========================================================================================================
+without a preconditioner:
+         iterNonPre = 1480    , errResNon = 9.98E-07, errIterNon = 2.58E-05
+============================================================================================================
+with a SSOR preconditioner:
+HBFLUnet_parameters: optimizer =   Adam(lr=0.01000),BATCH_SIZE = 200  ,EPOCHS = 10  ,loss = relative_err, n_train = 5000 
+------------------------------------------------------------------------------------------------------------
+       errlu      errDir     iterPre    errRes     errIter
+old :  1.44E+00   2.68E+00   41         7.64E-07   8.66E-06
+new :  4.60E+01   2.11E-01   38         6.26E-07   8.37E-05
+
+ 
+Comparison: num = 8 , N = 1024  , rk = 5  , tol = 1.0E-08, tolsol = 1.0E-06, w = 1.00, status = 0
+ ===========================================================================================================
+without a preconditioner:
+         iterNonPre = 5000    , errResNon = 2.84E-06, errIterNon = 1.05E-03
+============================================================================================================
+with a SSOR preconditioner:
+HBFLUnet_parameters: optimizer =   Adam(lr=0.01000),BATCH_SIZE = 200  ,EPOCHS = 10  ,loss = relative_err, n_train = 5000 
+------------------------------------------------------------------------------------------------------------
+       errlu      errDir     iterPre    errRes     errIter
+old :  1.30E+00   2.65E+00   188        9.00E-07   6.03E-05
+new :  2.28E+02   3.43E-01   2594       1.15E-04   3.31E-01
+
+ 
+Comparison: num = 9 , N = 1024  , rk = 5  , tol = 1.0E-08, tolsol = 1.0E-06, w = 1.00, status = 0
+ ===========================================================================================================
+without a preconditioner:
+         iterNonPre = 5000    , errResNon = 4.26E-05, errIterNon = 3.78E-03
+============================================================================================================
+with a SSOR preconditioner:
+HBFLUnet_parameters: optimizer =   Adam(lr=0.01000),BATCH_SIZE = 200  ,EPOCHS = 10  ,loss = relative_err, n_train = 5000 
+------------------------------------------------------------------------------------------------------------
+       errlu      errDir     iterPre    errRes     errIter
+old :  1.64E+00   1.83E+00   408        9.60E-07   2.11E-05
+new :  2.01E+01   2.61E-01   5000       7.00E-05   1.32E-01
+
+ 
